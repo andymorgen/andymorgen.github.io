@@ -1,0 +1,23 @@
+/*Wohoo here is my style sheet! */
+
+/*Header Styles */
+/*.header {background-image: url("Users/WallisKinney/Desktop/CopelyLab/Turbidostat.JPG";
+    height: 200px;
+    background-position: center center;}
+}
+*/
+
+img {border: 6px solid #B0C4DE;}
+
+h1{
+    color: black;
+    background-color: steelblue;
+    font-family: Arial, sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    top: 20%;}
+
+
