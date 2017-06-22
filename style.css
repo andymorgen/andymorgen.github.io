@@ -7,7 +7,8 @@
 }
 */
 
-img {border: 6px solid #B0C4DE;}
+img {border: 6px solid #B0C4DE;
+     margin-right: 50px;}
 
 h1{
     color: black;
