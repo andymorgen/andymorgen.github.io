@@ -8,8 +8,10 @@
 */
 
 img {border: 6px solid #B0C4DE;
-     margin-right: 50px;}
-
+     margin-right: 25px;
+     margin-left: 25px;
+     margin-top: 25px;
+     margin-bottom: 25px;}
 h1{
     color: black;
     background-color: steelblue;
