@@ -1,3 +1,5 @@
+print(paste('start making plots',Sys.time()))
+
 # load required packages
 library(ggplot2)
 library(reshape2)
@@ -5,7 +7,7 @@ library(scales)
 
 # CHANGE THESE OBJECTS BEFORE RUNNING THE SCRIPT
 # set working directory where the odlog.dat, log.dat, and blank.dat files from turbidostat are saved
-setwd("/home/mcdb/Desktop/Flexostat-interface-master")
+setwd("/Users/andrewmorgenthaler/Google Drive/MCDB/Copley/AMorgenthaler_lab_notebook/data_files/turbidostat/2017-05-01_glucoseconctest/")
 
 # which chambers aren't being used?
 notused <- c()
@@ -22,9 +24,6 @@ notused <- c()
 t <- 24
 # Number of seconds after last dilution to pull OD measurements
 s <- 16
-
-repeat {
-  print(paste('start making plots',Sys.time()))
 
 ## MAKE OD PLOT
 # import log.dat file into R and clean up
@@ -367,7 +366,3 @@ system('git add gr_hist_today.png')
 system(paste('git commit -m "growth rate histogram from current day', Sys.time(), '"'))
 system('git pull')
 system('git push -u origin master')
-
-# Wait time before generating new plots
-Sys.sleep(time=3600)
-}
