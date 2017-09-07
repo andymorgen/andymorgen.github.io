@@ -1,3 +1,5 @@
+print(paste('start making plots',Sys.time()))
+
 # load required packages
 library(ggplot2)
 library(reshape2)
@@ -23,8 +25,6 @@ t <- 24
 # Number of seconds after last dilution to pull OD measurements
 s <- 16
 
-repeat {
-  print(paste('start making plots',Sys.time()))
 
 ## MAKE OD PLOT
 # import log.dat file into R and clean up
@@ -367,7 +367,3 @@ system('git add gr_hist_today.png')
 system(paste('git commit -m "growth rate histogram from current day', Sys.time(), '"'))
 system('git pull')
 system('git push -u origin master')
-
-# Wait time before generating new plots
-Sys.sleep(time=3600)
-}
