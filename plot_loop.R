@@ -7,7 +7,7 @@ library(scales)
 
 # CHANGE THESE OBJECTS BEFORE RUNNING THE SCRIPT
 # set working directory where the odlog.dat, log.dat, and blank.dat files from turbidostat are saved
-setwd("/Users/andrewmorgenthaler/Google Drive/MCDB/Copley/AMorgenthaler_lab_notebook/data_files/turbidostat/2017-05-01_glucoseconctest/")
+setwd("/home/mcdb/Desktop/Flexostat-interface-master")
 
 # which chambers aren't being used?
 notused <- c()
@@ -25,10 +25,6 @@ t <- 24
 # Number of seconds after last dilution to pull OD measurements
 s <- 16
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 35d6b1c0985b35826a9becff4c92dc8c2b2c43e8
 ## MAKE OD PLOT
 # import log.dat file into R and clean up
 log <- read.table(file = "log.dat",sep = ",",col.names = c("timestamp","OD.1","OD.2","OD.3","OD.4","OD.5","OD.6","OD.7","OD.8","dil.1","dil.2","dil.3","dil.4","dil.5","dil.6","dil.7","dil.8","avgdil.1","avgdil.2","avgdil.3","avgdil.4","avgdil.5","avgdil.6","avgdil.7","avgdil.8"))
