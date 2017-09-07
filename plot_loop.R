@@ -59,6 +59,7 @@ ggplot(data = log.stacked, aes(x = day, y = OD, color = factor(chamber))) +
   labs(color = "chamber") +
   theme(legend.key = element_blank()) +
   ggtitle("OD over time") +
+  scale_y_continuous(limits = c(0,NA)) +
   theme(text = element_text(family="Myriad Pro"),
         axis.text=element_text(size=18),
         axis.title=element_text(size=20,face="bold"),
